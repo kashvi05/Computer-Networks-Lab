@@ -33,6 +33,7 @@ int main()
     sin.sin_addr.s_addr = INADDR_ANY;
 
     int n, f;
+    
     socklen_t len = (socklen_t)sizeof(struct sockaddr_in);
 
     sendto(sockfd, (const char *)message, strlen(message),
